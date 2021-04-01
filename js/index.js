@@ -23,11 +23,11 @@ function playSound(number) {
             return audio.play();
             break;
         case '2':
-            audio = new Audio('../sounds/2-gotHim.mp3');
+            audio = new Audio('sounds/2-gotHim.mp3');
             return audio.play();
             break;
         case '3':
-            audio = new Audio('../sounds/3-coffin.mp3');
+            audio = new Audio('3-coffin.mp3');
             return audio.play();
             break;
         case '4':
