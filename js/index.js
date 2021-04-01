@@ -35,7 +35,7 @@ function playSound(number) {
             return audio.play();
             break;
         case '5':
-            audio = new Audio('/sounds/5-monitor.mp3');
+            audio = new Audio('sounds/5-monitor.mp3');
             return audio.play();
             break;
         case '6':
