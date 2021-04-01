@@ -9,6 +9,12 @@ document.querySelectorAll('.sound').forEach(button => {
     });
 });
 
+document.addEventListener('keypress', function (event) {
+    if (audio)
+        audio.pause()
+    playSound(event.key);
+});
+
 function playSound(number) {
 
     switch (number) {
@@ -46,10 +52,6 @@ function playSound(number) {
             break;
         case '9':
             audio = new Audio('../sounds/9-again.mp3');
-            return audio.play();
-            break;
-        default:
-            audio = new Audio('../sounds/1-rick.mp3');
             return audio.play();
             break;
     }
