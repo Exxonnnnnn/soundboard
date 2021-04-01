@@ -1,15 +1,16 @@
 h1 {
   font-size: 50px;
   text-align: center;
+  color: white;
 }
 
 body {
   align-items: center;
+  background-color: black;
 }
 
 button {
   background-color: cyan;
-  background-image: "../images/rick.jpg";
   text-align: center;
   padding: 15px 20px;
   border-radius: 15px;
