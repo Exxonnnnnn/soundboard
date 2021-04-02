@@ -1,7 +1,7 @@
 body {
   text-align: center;
   align-items: center;
-  background-color: black;
+  background-color: grey;
 }
 
 h1 {
@@ -19,4 +19,11 @@ button {
   width: 100%;
   padding-top: 4px;
   display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 15;
+  float: right;
+  text-align: left;
 }

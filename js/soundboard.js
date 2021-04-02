@@ -9,7 +9,7 @@ document.querySelectorAll('.sound').forEach(button => {
     });
 });
 
-function playSound(number) {
-    audio = new Audio(`sounds/${number}.mp3`)
+function playSound(name) {
+    audio = new Audio(`../sounds/${name}.mp3`)
     audio.play()
 };
