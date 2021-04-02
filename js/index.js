@@ -5,7 +5,8 @@ document.querySelectorAll('.sound').forEach(button => {
     button.addEventListener('click', function () {
         if (audio)
             audio.pause()
-        playSound(button.innerHTML[0]);
+        playSound(button.id);
+        console.log(button.id)
     });
 });
 
@@ -18,40 +19,76 @@ document.addEventListener('keypress', function (event) {
 function playSound(number) {
 
     switch (number) {
-        case '1':
-            audio = new Audio('sounds/1-rick.mp3');
+        case 'rick':
+            audio = new Audio('sounds/rick.mp3');
             return audio.play();
             break;
-        case '2':
-            audio = new Audio('sounds/2-gotHim.mp3');
+        case 'got-him':
+            audio = new Audio('sounds/got-him.mp3');
             return audio.play();
             break;
-        case '3':
-            audio = new Audio('sounds/3-coffin.mp3');
+        case 'coffin':
+            audio = new Audio('sounds/coffin.mp3');
             return audio.play();
             break;
-        case '4':
-            audio = new Audio('sounds/4-doIt.mp3');
+        case 'do-it':
+            audio = new Audio('sounds/do-it.mp3');
             return audio.play();
             break;
-        case '5':
-            audio = new Audio('sounds/5-monitor.mp3');
+        case 'monitor':
+            audio = new Audio('sounds/monitor.mp3');
             return audio.play();
             break;
-        case '6':
-            audio = new Audio('sounds/6-shotsFired.mp3');
+        case 'shots-fired':
+            audio = new Audio('sounds/shots-fired.mp3');
             return audio.play();
             break;
-        case '7':
-            audio = new Audio('sounds/7-cares.mp3');
+        case 'no-one-cares':
+            audio = new Audio('sounds/no-one-cares.mp3');
             return audio.play();
             break;
-        case '8':
-            audio = new Audio('sounds/8-bruh.mp3');
+        case 'bruh':
+            audio = new Audio('sounds/bruh.mp3');
             return audio.play();
             break;
-        case '9':
-            audio = new Audio('sounds/9-again.mp3');
+        case 'd-join':
+            audio = new Audio('sounds/d-join.mp3');
+            return audio.play();
+            break;
+        case 'd-leave':
+            audio = new Audio('sounds/d-leave.mp3');
+            return audio.play();
+            break;
+        case 'd-ping':
+            audio = new Audio('sounds/d-ping.mp3');
+            return audio.play();
+            break;
+        case 'nick-cock':
+            audio = new Audio('sounds/nice-cock.mp3');
+            return audio.play();
+            break;
+        case 'pornhub-intro':
+            audio = new Audio('sounds/pornhub-intro.mp3');
+            return audio.play();
+            break;
+        case 'shut-up-1':
+            audio = new Audio('sounds/shut-up-1.mp3');
+            return audio.play();
+            break;
+        case 'shut-up-2':
+            audio = new Audio('sounds/shut-up-2.mp3');
+            return audio.play();
+            break;
+        case 'here-we-go-again':
+            audio = new Audio('sounds/here-we-go-again.mp3');
+            return audio.play();
+            break;
+        case 'wasted':
+            audio = new Audio('sounds/wasted.mp3');
+            return audio.play();
+            break;
+        case 'your-cut':
+            audio = new Audio('sounds/your-cut.mp3');
             return audio.play();
             break;
     }
