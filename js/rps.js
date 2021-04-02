@@ -27,6 +27,14 @@ function playRPS(option) {
     const user = option;
     const computer = computerChoice();
 
+    if (user === computer) {
+        content.textContent = 'You tied!';
+
+        return setTimeout(() => {
+            content.textContent = 'Please select either rock, paper or scissors!';
+        });
+    }
+
     if (
         (user === "rock" && computer === "scissors") ||
         (user === "paper" && computer === "rock") ||
@@ -34,18 +42,18 @@ function playRPS(option) {
     ) {
         audio = new Audio("../sounds/won.mp3");
         audio.play();
-        content.textContent = 'Congrats, you won!'
+        content.textContent = 'Congrats, you won!';
 
-        setTimeout(() => {
+        return setTimeout(() => {
             content.textContent = 'Please select either rock, paper or scissors!'
         }, 5000);
 
     } else {
         audio = new Audio("../sounds/lost.mp3");
         audio.play();
-        content.textContent = 'Nice try, you lost!'
+        content.textContent = 'Nice try, you lost!';
 
-        setTimeout(() => {
+        return setTimeout(() => {
             content.textContent = 'Please select either rock, paper or scissors!'
         }, 5000);
     }
