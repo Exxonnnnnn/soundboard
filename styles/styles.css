@@ -1,56 +1,22 @@
-h1 {
-  font-size: 50px;
-  text-align: center;
-  color: white;
-}
-
 body {
+  text-align: center;
   align-items: center;
   background-color: black;
 }
 
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
 button {
   background-color: cyan;
-  text-align: center;
   padding: 15px 20px;
   border-radius: 15px;
 }
 
-#outer {
+.row {
   width: 100%;
-  text-align: center;
-}
-
-.inner {
-  display: inline-block;
-}
-
-#outer2 {
-  width: 100%;
-  text-align: center;
   padding-top: 4px;
-}
-
-#outer2 .inner {
-  display: inline-block;
-}
-
-#outer3 {
-  width: 100%;
-  text-align: center;
-  padding-top: 4px;
-}
-
-#outer3 .inner {
-  display: inline-block;
-}
-
-#outer4 {
-  width: 100%;
-  text-align: center;
-  padding-top: 4px;
-}
-
-#outer4 .inner {
-  display: inline-block;
+  display: block;
 }
