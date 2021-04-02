@@ -30,7 +30,7 @@ function playRPS(option) {
     if (
         (user === "rock" && computer === "scissors") ||
         (user === "paper" && computer === "rock") ||
-        (user === "paper" && computer === "scissors")
+        (user === "scissors" && computer === "paper")
     ) {
         audio = new Audio("../sounds/won.mp3");
         audio.play();
