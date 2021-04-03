@@ -1,6 +1,6 @@
 let audio;
 
-document.querySelectorAll('.sound').forEach(button => {
+document.querySelectorAll('.myButton').forEach(button => {
     button.addEventListener('click', function () {
         if (audio)
             audio.pause();
