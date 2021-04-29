@@ -1,11 +1,7 @@
 let audio;
 
-function randomNumber() {
-    return Math.floor(Math.random() * 3);
-}
-
 const computerChoice = () => {
-    switch (randomNumber()) {
+    switch (Math.floor(Math.random() * 3)) {
         case 0:
             return 'rock';
             break;
